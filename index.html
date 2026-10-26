@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Pembelajaran Keamanan Jaringan</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- App Screen Container inside Device Shell -->
+  <div id="device-wrapper" class="landscape">
+    <div id="app-container">
+
+      <!-- 1. SPLASH SCREEN -->
+      <div id="screen-splash" class="screen active">
+        <img src="assets/images/splash.jpg" alt="Splash Screen" class="splash-img">
+      </div>
+
+      <!-- 2. MAIN MENU SCREEN -->
+      <div id="screen-main" class="screen">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+
+        <header class="app-header">
+          <button class="glass-btn" onclick="showExitModal()" title="Keluar">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </button>
+          <div class="header-title-box">
+            <h1>MEDIA PEMBELAJARAN</h1>
+            <div class="header-underline"></div>
+          </div>
+          <button class="glass-btn" id="btn-audio" onclick="toggleBgm()" title="Musik BGM">
+            <i class="fa-solid fa-volume-high" id="audio-icon"></i>
+          </button>
+        </header>
+
+        <main class="menu-grid">
+          <div class="menu-card" onclick="navigateTo('materi')" style="--card-color: #4FC3F7;">
+            <div class="card-glow"></div>
+            <div class="icon-circle"><i class="fa-solid fa-book-open"></i></div>
+            <span>Materi</span>
+          </div>
+          <div class="menu-card" onclick="navigateTo('cp')" style="--card-color: #81C784;">
+            <div class="card-glow"></div>
+            <div class="icon-circle"><i class="fa-solid fa-flag"></i></div>
+            <span>CP</span>
+          </div>
+          <div class="menu-card" onclick="navigateTo('tp')" style="--card-color: #FFB74D;">
+            <div class="card-glow"></div>
+            <div class="icon-circle"><i class="fa-solid fa-bullseye"></i></div>
+            <span>TP</span>
+          </div>
+          <div class="menu-card" onclick="navigateTo('video')" style="--card-color: #E57373;">
+            <div class="card-glow"></div>
+            <div class="icon-circle"><i class="fa-solid fa-circle-play"></i></div>
+            <span>Video</span>
+          </div>
+          <div class="menu-card" onclick="navigateTo('sekolah')" style="--card-color: #BA68C8;">
+            <div class="card-glow"></div>
+            <div class="icon-circle"><i class="fa-solid fa-school"></i></div>
+            <span>Tentang Sekolah</span>
+          </div>
+          <div class="menu-card" onclick="navigateTo('petunjuk')" style="--card-color: #4DD0E1;">
+            <div class="card-glow"></div>
+            <div class="icon-circle"><i class="fa-solid fa-circle-question"></i></div>
+            <span>Petunjuk</span>
+          </div>
+          <div class="menu-card" onclick="navigateTo('evaluasi')" style="--card-color: #F06292;">
+            <div class="card-glow"></div>
+            <div class="icon-circle"><i class="fa-solid fa-brain"></i></div>
+            <span>Evaluasi</span>
+          </div>
+          <div class="menu-card" onclick="navigateTo('profil')" style="--card-color: #AED581;">
+            <div class="card-glow"></div>
+            <div class="icon-circle"><i class="fa-solid fa-user-graduate"></i></div>
+            <span>Profil</span>
+          </div>
+        </main>
+      </div>
+
+      <!-- 3. MATERI SCREEN -->
+      <div id="screen-materi" class="screen sub-screen">
+        <header class="sub-header">
+          <button class="home-btn" onclick="navigateTo('main')">
+            <img src="assets/images/home.png" alt="Home">
+          </button>
+          <h2>MATERI PEMBELAJARAN</h2>
+          <div style="width: 60px;"></div>
+        </header>
+        <div class="content-body grid-8">
+          <!-- Dynamically populated via JS -->
+        </div>
+      </div>
+
+      <!-- MATERI READER DETAIL -->
+      <div id="screen-materi-detail" class="screen sub-screen">
+        <header class="sub-header">
+          <button class="home-btn" onclick="navigateTo('materi')">
+            <img src="assets/images/home.png" alt="Back">
+          </button>
+          <h2 id="materi-detail-title">Modul</h2>
+          <div style="width: 60px;"></div>
+        </header>
+        <div class="reader-container">
+          <button class="page-nav-btn prev" onclick="prevPage()"><i class="fa-solid fa-chevron-left"></i></button>
+          <div id="materi-page-viewer" class="page-viewer">
+            <!-- Rendered images -->
+          </div>
+          <button class="page-nav-btn next" onclick="nextPage()"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- 4. CP SCREEN -->
+      <div id="screen-cp" class="screen sub-screen">
+        <header class="sub-header">
+          <button class="glass-btn" onclick="navigateTo('main')"><i class="fa-solid fa-arrow-left"></i></button>
+          <h2>CAPAIAN PEMBELAJARAN (CP)</h2>
+          <div style="width: 60px;"></div>
+        </header>
+        <div class="content-body scrollable">
+          <div class="glass-box cp-box">
+            <ol id="cp-list"></ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. TP SCREEN -->
+      <div id="screen-tp" class="screen sub-screen">
+        <header class="sub-header">
+          <button class="glass-btn" onclick="navigateTo('main')"><i class="fa-solid fa-arrow-left"></i></button>
+          <h2>TUJUAN PEMBELAJARAN (TP)</h2>
+          <div style="width: 60px;"></div>
+        </header>
+        <div class="content-body scrollable">
+          <div class="glass-box tp-box">
+            <ol id="tp-list"></ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. VIDEO SCREEN -->
+      <div id="screen-video" class="screen sub-screen">
+        <header class="sub-header">
+          <button class="glass-btn" onclick="navigateTo('main')"><i class="fa-solid fa-arrow-left"></i></button>
+          <h2 id="video-header-title">VIDEO PEMBELAJARAN</h2>
+          <div style="width: 60px;"></div>
+        </header>
+        <div class="content-body scrollable" id="video-content-area">
+          <!-- Video List or Player -->
+        </div>
+      </div>
+
+      <!-- 7. TENTANG SEKOLAH -->
+      <div id="screen-sekolah" class="screen sub-screen">
+        <header class="sub-header">
+          <button class="glass-btn" onclick="navigateTo('main')"><i class="fa-solid fa-arrow-left"></i></button>
+          <h2>TENTANG SEKOLAH</h2>
+          <div style="width: 60px;"></div>
+        </header>
+        <div class="content-body scrollable">
+          <div class="glass-box school-box">
+            <h3>A. Identitas Sekolah</h3>
+            <div class="info-row"><span>NPSN</span><span>:</span><span>10307985</span></div>
+            <div class="info-row"><span>Nama Sekolah</span><span>:</span><span>SMKS PEMBANGUNAN BUKITTINGGI</span></div>
+            <div class="info-row"><span>Bentuk Pendidikan</span><span>:</span><span>SMK</span></div>
+            <div class="info-row"><span>Status Sekolah</span><span>:</span><span>Swasta</span></div>
+            <div class="info-row"><span>Akreditasi</span><span>:</span><span>B</span></div>
+
+            <h3 style="margin-top: 30px;">B. Alamat & Lokasi</h3>
+            <div class="info-row"><span>Alamat Jalan</span><span>:</span><span>JL. ISKANDAR TEDJA SUKMANA</span></div>
+            <div class="info-row"><span>Provinsi</span><span>:</span><span>Prov. Sumatera Barat</span></div>
+            <div class="info-row"><span>Kabupaten/Kota</span><span>:</span><span>Kota Bukittinggi</span></div>
+            <div class="info-row"><span>Kecamatan</span><span>:</span><span>Kec. Guguk Panjang</span></div>
+            <div class="info-row"><span>Desa/Kelurahan</span><span>:</span><span>Tarok Dipo</span></div>
+            <div class="info-row"><span>Kode Pos</span><span>:</span><span>26117</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. PETUNJUK -->
+      <div id="screen-petunjuk" class="screen sub-screen">
+        <header class="sub-header">
+          <button class="glass-btn" onclick="navigateTo('main')"><i class="fa-solid fa-arrow-left"></i></button>
+          <h2>PETUNJUK PENGGUNAAN APLIKASI</h2>
+          <div style="width: 60px;"></div>
+        </header>
+        <div class="content-body scrollable">
+          <div class="glass-box">
+            <div class="instruction-item">
+              <div class="num-badge">1</div>
+              <div>
+                <h4>Navigasi Utama</h4>
+                <p>Gunakan tombol menu, lanjut, atau kembali yang tersedia di layar untuk berpindah halaman dan menjelajahi materi secara terstruktur.</p>
+              </div>
+            </div>
+            <div class="instruction-item">
+              <div class="num-badge">2</div>
+              <div>
+                <h4>Capaian & Tujuan Pembelajaran (CP & TP)</h4>
+                <p>Awali pembelajaran dengan mempelajari Capaian Pembelajaran (CP) dan memahami rumusan Tujuan Pembelajaran (TP 3.1 s.d. TP 3.8) yang menjadi target kompetensi Anda.</p>
+              </div>
+            </div>
+            <div class="instruction-item">
+              <div class="num-badge">3</div>
+              <div>
+                <h4>Eksplorasi Materi</h4>
+                <p>Pelajari materi modul keamanan jaringan secara berurutan mulai dari Topik 3.1 (Ancaman & Serangan) hingga Topik 3.8 (Kriptografi) untuk pemahaman yang utuh.</p>
+              </div>
+            </div>
+            <div class="instruction-item">
+              <div class="num-badge">4</div>
+              <div>
+                <h4>Evaluasi & Kuis</h4>
+                <p>Setelah selesai mempelajari seluruh materi, uji tingkat pemahaman Anda dengan mengerjakan soal-soal pilihan ganda pada menu Evaluasi untuk melihat perolehan skor akhir Anda.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. EVALUASI INTRO -->
+      <div id="screen-evaluasi" class="screen sub-screen">
+        <header class="sub-header">
+          <button class="glass-btn" onclick="navigateTo('main')"><i class="fa-solid fa-arrow-left"></i></button>
+          <h2>EVALUASI</h2>
+          <button class="glass-btn" onclick="openHistoryModal()"><i class="fa-solid fa-history"></i></button>
+        </header>
+        <div class="content-body grid-eval">
+          <!-- 8 Quiz Cards -->
+        </div>
+      </div>
+
+      <!-- QUIZ ACTIVE SCREEN -->
+      <div id="screen-quiz" class="screen sub-screen">
+        <header class="sub-header">
+          <button class="glass-btn" onclick="confirmQuitQuiz()"><i class="fa-solid fa-xmark"></i></button>
+          <div class="quiz-progress-box">
+            <span id="quiz-progress-title">Kuis 1 — Soal 1/10</span>
+            <div class="progress-bar"><div id="progress-fill" style="width: 10%;"></div></div>
+          </div>
+          <div class="score-badge" id="quiz-live-score">Skor: 0</div>
+        </header>
+        <div class="quiz-body">
+          <div class="question-card" id="question-text">Pertanyaan...</div>
+          <div class="options-grid">
+            <button class="option-btn" onclick="answerQuiz('A')" id="opt-A">A. ...</button>
+            <button class="option-btn" onclick="answerQuiz('B')" id="opt-B">B. ...</button>
+            <button class="option-btn" onclick="answerQuiz('C')" id="opt-C">C. ...</button>
+            <button class="option-btn" onclick="answerQuiz('D')" id="opt-D">D. ...</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESULT SCREEN -->
+      <div id="screen-result" class="screen sub-screen">
+        <div class="result-card glass-box">
+          <i class="fa-solid fa-trophy" id="result-icon"></i>
+          <h2 id="result-title">SELAMAT!</h2>
+          <p id="result-subtitle">Kuis 1 - Topik...</p>
+          <h1 id="result-score">80 / 100</h1>
+          <div class="result-actions">
+            <button class="action-btn primary" onclick="restartQuiz()"><i class="fa-solid fa-rotate-right"></i> Ulangi</button>
+            <button class="action-btn secondary" onclick="navigateTo('evaluasi')"><i class="fa-solid fa-arrow-left"></i> Kembali</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. PROFIL -->
+      <div id="screen-profil" class="screen sub-screen">
+        <header class="sub-header">
+          <button class="glass-btn" onclick="navigateTo('main')"><i class="fa-solid fa-arrow-left"></i></button>
+          <h2>PROFIL PENGEMBANG</h2>
+          <div style="width: 60px;"></div>
+        </header>
+        <div class="content-body profil-layout">
+          <div class="profil-photo-box">
+            <img src="assets/images/foto.png" alt="Mawar Difa Andini">
+          </div>
+          <div class="profil-info-box glass-box">
+            <div class="info-row"><i class="fa-solid fa-user"></i><div><span>Nama</span><strong>Mawar Difa Andini</strong></div></div>
+            <div class="info-row"><i class="fa-solid fa-id-card"></i><div><span>NIM</span><strong>2522148</strong></div></div>
+            <div class="info-row"><i class="fa-solid fa-graduation-cap"></i><div><span>Program Studi</span><strong>Pendidikan Teknik Informatika dan Komputer</strong></div></div>
+            <div class="info-row"><i class="fa-solid fa-building-columns"></i><div><span>Fakultas</span><strong>FTIK</strong></div></div>
+            <div class="info-row"><i class="fa-solid fa-university"></i><div><span>Universitas</span><strong>UIN SMDD</strong></div></div>
+            <div class="info-row"><i class="fa-solid fa-envelope"></i><div><span>Email</span><strong>mawardf02@gmail.com</strong></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Orientation Toggle Bar (Bottom) -->
+  <div id="orientation-bar">
+    <span>Mode Layar:</span>
+    <button onclick="setOrientation('landscape')" id="btn-landscape" class="active">Landscape</button>
+    <button onclick="setOrientation('portrait')" id="btn-portrait">Portrait</button>
+  </div>
+
+  <!-- EXIT MODAL -->
+  <div id="exit-modal" class="modal">
+    <div class="modal-content solid-box">
+      <h3>Keluar</h3>
+      <p>Apakah kamu yakin ingin keluar?</p>
+      <div class="modal-actions">
+        <button class="action-btn secondary" onclick="closeExitModal()">Tidak</button>
+        <button class="action-btn primary danger" onclick="window.close()">Ya</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HISTORY MODAL -->
+  <div id="history-modal" class="modal">
+    <div class="modal-content solid-box large">
+      <div class="modal-header">
+        <h3>Riwayat Evaluasi</h3>
+        <button class="glass-btn" onclick="closeHistoryModal()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="history-list" id="history-list-container">
+        <!-- History items -->
+      </div>
+      <div class="modal-actions">
+        <button class="action-btn danger" onclick="clearHistory()"><i class="fa-solid fa-trash"></i> Hapus Riwayat</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONFIRM MODAL -->
+  <div id="confirm-modal" class="modal">
+    <div class="modal-content solid-box">
+      <h3 id="confirm-title">Konfirmasi</h3>
+      <p id="confirm-message">Apakah kamu yakin?</p>
+      <div class="modal-actions">
+        <button class="action-btn secondary" onclick="resolveConfirm(false)">Tidak</button>
+        <button class="action-btn primary danger" onclick="resolveConfirm(true)">Ya</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BGM Audio Element -->
+  <audio id="bgm-audio" src="assets/audio/edu_bgm.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,927 @@
+{
+  "mata_pelajaran": "Keamanan Jaringan",
+  "fase": "F",
+  "kurikulum": "Kurikulum Merdeka",
+  "modul_pembelajaran": [
+    {
+      "topik": "TP 3.1 - Potensi Ancaman & Serangan Jaringan",
+      "soal": [
+        {
+          "nomor": 1,
+          "pertanyaan": "Serangan yang dilakukan dengan membanjiri lalu lintas server menggunakan ribuan permintaan palsu secara bersamaan hingga server mengalami overload disebut...",
+          "pilihan": {
+            "A": "Phishing",
+            "B": "SQL Injection",
+            "C": "DDoS (Distributed Denial of Service)",
+            "D": "Defacement"
+          },
+          "jawaban_benar": "C"
+        },
+        {
+          "nomor": 2,
+          "pertanyaan": "Tindakan menyadap lalu lintas paket data yang melintas di dalam jaringan komputer untuk mencuri informasi sensitif seperti username dan password disebut...",
+          "pilihan": {
+            "A": "Packet Sniffing",
+            "B": "Ransomware",
+            "C": "Brute Force",
+            "D": "Social Engineering"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 3,
+          "pertanyaan": "Jenis malware yang mengenkripsi data pada komputer korban dan meminta tebusan agar data dapat dikembalikan disebut...",
+          "pilihan": {
+            "A": "Adware",
+            "B": "Spyware",
+            "C": "Ransomware",
+            "D": "Trojan Horse"
+          },
+          "jawaban_benar": "C"
+        },
+        {
+          "nomor": 4,
+          "pertanyaan": "Metode serangan di mana penyerang menyamar sebagai entitas yang sah untuk mengelabui pengguna agar memberikan data kredensial disebut...",
+          "pilihan": {
+            "A": "Spoofing",
+            "B": "IP Sec",
+            "C": "Hardening",
+            "D": "Hashing"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 5,
+          "pertanyaan": "Manipulasi psikologis terhadap manusia untuk mendapatkan akses ilegal atau informasi rahasia dinamakan...",
+          "pilihan": {
+            "A": "Buffer Overflow",
+            "B": "Social Engineering",
+            "C": "Man-in-the-Middle",
+            "D": "Zero-Day Exploit"
+          },
+          "jawaban_benar": "B"
+        },
+        {
+          "nomor": 6,
+          "pertanyaan": "Celah keamanan perangkat lunak yang baru ditemukan dan belum diketahui oleh pengembang atau belum ada tambalannya (*patch*) disebut...",
+          "pilihan": {
+            "A": "Backdoor",
+            "B": "Zero-Day Vulnerability",
+            "C": "Malware",
+            "D": "Firewall Bypass"
+          },
+          "jawaban_benar": "B"
+        },
+        {
+          "nomor": 7,
+          "pertanyaan": "Serangan yang menyisipkan perintah berbahaya ke dalam masukan basis data aplikasi web disebut...",
+          "pilihan": {
+            "A": "SQL Injection",
+            "B": "Cross-Site Scripting",
+            "C": "SYN Flood",
+            "D": "MAC Flooding"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 8,
+          "pertanyaan": "Tindakan mengubah tampilan halaman utama sebuah website secara ilegal oleh pihak tidak berwenang disebut...",
+          "pilihan": {
+            "A": "Phishing",
+            "B": "Defacement",
+            "C": "Spamming",
+            "D": "Sniffing"
+          },
+          "jawaban_benar": "B"
+        },
+        {
+          "nomor": 9,
+          "pertanyaan": "Program tersembunyi yang menyusup ke dalam sistem dengan menyamar sebagai program yang berguna tetapi merusak sistem saat dijalankan adalah...",
+          "pilihan": {
+            "A": "Worm",
+            "B": "Trojan Horse",
+            "C": "Virus",
+            "D": "Adware"
+          },
+          "jawaban_benar": "B"
+        },
+        {
+          "nomor": 10,
+          "pertanyaan": "Metode coba-coba kombinasi kata sandi secara otomatis menggunakan skrip atau program komputer berkecepatan tinggi disebut...",
+          "pilihan": {
+            "A": "Brute Force Attack",
+            "B": "Phishing Attack",
+            "C": "DDOS Attack",
+            "D": "Session Hijacking"
+          },
+          "jawaban_benar": "A"
+        }
+      ]
+    },
+    {
+      "topik": "TP 3.2 - Sistem Keamanan Jaringan",
+      "soal": [
+        {
+          "nomor": 1,
+          "pertanyaan": "Sistem atau perangkat keamanan jaringan yang bertugas menyaring lalu lintas data masuk dan keluar berdasarkan aturan tertentu adalah...",
+          "pilihan": {
+            "A": "Switch Manageable",
+            "B": "Firewall",
+            "C": "Repeater",
+            "D": "Access Point"
+          },
+          "jawaban_benar": "B"
+        },
+        {
+          "nomor": 2,
+          "pertanyaan": "Konsep pertahanan keamanan berlapis yang menggabungkan berbagai mekanisme proteksi di berbagai lapisan sistem disebut...",
+          "pilihan": {
+            "A": "Single Point of Failure",
+            "B": "Defense in Depth",
+            "C": "Flat Network Architecture",
+            "D": "Open System Interconnection"
+          },
+          "jawaban_benar": "B"
+        },
+        {
+          "nomor": 3,
+          "pertanyaan": "Protokol yang digunakan untuk mengamankan komunikasi data di internet menggunakan enkripsi berbasis SSL/TLS pada layer aplikasi web adalah...",
+          "pilihan": {
+            "A": "HTTP",
+            "B": "FTP",
+            "C": "HTTPS",
+            "D": "Telnet"
+          },
+          "jawaban_benar": "C"
+        },
+        {
+          "nomor": 4,
+          "pertanyaan": "Virtual Private Network (VPN) berfungsi untuk...",
+          "pilihan": {
+            "A": "Mempercepat koneksi internet publik",
+            "B": "Membuat terowongan komunikasi yang aman dan terenkripsi di atas jaringan publik",
+            "C": "Menggantikan peran fungsi router utama",
+            "D": "Memblokir seluruh alamat MAC address klien"
+          },
+          "jawaban_benar": "B"
+        },
+        {
+          "nomor": 5,
+          "pertanyaan": "Perangkat keamanan jaringan yang mampu menganalisis muatan payload paket data secara mendalam untuk mendeteksi ancaman spesifik adalah...",
+          "pilihan": {
+            "A": "Packet Filter Firewall",
+            "B": "Next-Generation Firewall (NGFW)",
+            "C": "Hub 24 Port",
+            "D": "Unmanaged Switch"
+          },
+          "jawaban_benar": "B"
+        },
+        {
+          "nomor": 6,
+          "pertanyaan": "Kebijakan keamanan dasar yang menerapkan prinsip akses minimum di mana pengguna hanya diberikan hak akses sekecil mungkin yang diperlukan disebut...",
+          "pilihan": {
+            "A": "Principle of Least Privilege",
+            "B": "Maximum Security Policy",
+            "C": "Open Access Policy",
+            "D": "Full Trust Model"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 7,
+          "pertanyaan": "Fungsi utama dari sistem deteksi intrusi dalam arsitektur pengamanan jaringan adalah...",
+          "pilihan": {
+            "A": "Menambah kecepatan transfer data",
+            "B": "Mendeteksi aktivitas mencurigakan atau pelanggaran kebijakan keamanan",
+            "C": "Mengonversi IP Public menjadi IP Private",
+            "D": "Menyimpan file cadangan secara otomatis"
+          },
+          "jawaban_benar": "B"
+        },
+        {
+          "nomor": 8,
+          "pertanyaan": "Teknologi NAT (Network Address Translation) pada perimeter jaringan utamanya berguna untuk...",
+          "pilihan": {
+            "A": "Menyembunyikan alamat IP lokal di belakang satu IP publik",
+            "B": "Mempercantik tampilan antarmuka web",
+            "C": "Mengganti fungsi kabel UTP",
+            "D": "Meningkatkan resolusi pengiriman paket"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 9,
+          "pertanyaan": "Keuntungan utama menggunakan arsitektur jaringan tersegmentasi (pembagian VLAN) adalah...",
+          "pilihan": {
+            "A": "Mencegah penyebaran ancaman atau malware secara luas ke seluruh segmen jaringan",
+            "B": "Membuat biaya perangkat menjadi lebih mahal",
+            "C": "Menghilangkan kebutuhan akan kabel jaringan",
+            "D": "Mempercepat kinerja harddisk server"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 10,
+          "pertanyaan": "Protokol manajemen jaringan yang menyediakan fitur enkripsi untuk mencegah kebocoran data saat melakukan konfigurasi jarak jauh adalah...",
+          "pilihan": {
+            "A": "Telnet",
+            "B": "HTTP",
+            "C": "SSH (Secure Shell)",
+            "D": "SNMP v1"
+          },
+          "jawaban_benar": "C"
+        }
+      ]
+    },
+    {
+      "topik": "TP 3.3 - Penguatan Host (Host Hardening)",
+      "soal": [
+        {
+          "nomor": 1,
+          "pertanyaan": "Langkah penguatan keamanan pada sistem operasi host dan server dengan menutup celah, menghapus layanan tak terpakai, dan memperbarui sistem disebut...",
+          "pilihan": {
+            "A": "Host Hardening",
+            "B": "Network Bridging",
+            "C": "IP Subnetting",
+            "D": "Bandwidth Limiting"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 2,
+          "pertanyaan": "Konfigurasi pada file sshd_config Linux yang tepat untuk melarang akun root masuk secara langsung via SSH adalah...",
+          "pilihan": {
+            "A": "PermitRootLogin no",
+            "B": "RootAccess disable",
+            "C": "AllowRootLogin false",
+            "D": "SuperUser off"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 3,
+          "pertanyaan": "Tujuan utama menonaktifkan layanan atau port jaringan yang tidak terpakai pada sebuah server adalah...",
+          "pilihan": {
+            "A": "Mengurangi luas permukaan serangan (attack surface)",
+            "B": "Menambah kapasitas RAM fisik",
+            "C": "Mempercepat proses booting komputer",
+            "D": "Mengurangi suhu temperatur ruangan server"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 4,
+          "pertanyaan": "Perintah dasar pada sistem operasi Linux Ubuntu/Debian untuk memperbarui daftar paket dan sistem secara berkala adalah...",
+          "pilihan": {
+            "A": "apt update && apt upgrade",
+            "B": "netsh firewall reset",
+            "C": "shutdown -r now",
+            "D": "systemctl restart network"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 5,
+          "pertanyaan": "Pengaturan hak akses file dengan perintah `chmod 600` pada sebuah file rahasia di Linux berarti...",
+          "pilihan": {
+            "A": "File dapat dibaca, ditulis, dan dieksekusi oleh siapa saja",
+            "B": "File hanya dapat dibaca dan ditulis oleh pemiliknya saja, pengguna lain tidak punya akses",
+            "C": "File terkunci total dan tidak bisa dihapus",
+            "D": "File bersifat publik read-only"
+          },
+          "jawaban_benar": "B"
+        },
+        {
+          "nomor": 6,
+          "pertanyaan": "Tool bawaan berbasis CLI pada sistem operasi Linux modern untuk mengatur aturan firewall tingkat host adalah...",
+          "pilihan": {
+            "A": "UFW (Uncomplicated Firewall)",
+            "B": "Winbox",
+            "C": "PuTTY Config",
+            "D": "Task Manager"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 7,
+          "pertanyaan": "Mengapa penting untuk menerapkan kebijakan kata sandi yang kuat (*strong password policy*) pada akun pengguna server?",
+          "pilihan": {
+            "A": "Agar mudah diingat oleh administrator",
+            "B": "Untuk mencegah serangan tebakan kata sandi atau brute force",
+            "C": "Agar memori server tidak cepat penuh",
+            "D": "Mempercepat proses enkripsi file database"
+          },
+          "jawaban_benar": "B"
+        },
+        {
+          "nomor": 8,
+          "pertanyaan": "Layanan pencatatan aktivitas sistem (*logging*) di Linux yang merekam kejadian keamanan penting disimpan secara default di dalam direktori...",
+          "pilihan": {
+            "A": "/var/log/",
+            "B": "/home/user/",
+            "C": "/etc/network/",
+            "D": "/bin/sh/"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 9,
+          "pertanyaan": "Praktik pengamanan host dengan memastikan bahwa seluruh *patch* keamanan terbaru dari vendor sistem operasi telah terpasang disebut...",
+          "pilihan": {
+            "A": "Patch Management",
+            "B": "Port Forwarding",
+            "C": "Packet Inspection",
+            "D": "Load Balancing"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 10,
+          "pertanyaan": "Mengapa penggunaan protokol lawas seperti Telnet dan FTP sangat dihindari dalam praktik hardening server modern?",
+          "pilihan": {
+            "A": "Karena mengirimkan data dan password dalam bentuk teks biasa (plaintext)",
+            "B": "Karena ukurannya terlalu besar untuk memori server",
+            "C": "Karena hanya mendukung sistem operasi Windows 95",
+            "D": "Karena membutuhkan kecepatan internet minimal 1 Gbps"
+          },
+          "jawaban_benar": "A"
+        }
+      ]
+    },
+    {
+      "topik": "TP 3.4 - Membangun Server DMZ",
+      "soal": [
+        {
+          "nomor": 1,
+          "pertanyaan": "Kepanjangan dari DMZ dalam arsitektur jaringan komputer adalah...",
+          "pilihan": {
+            "A": "Data Management Zone",
+            "B": "Demilitarized Zone",
+            "C": "Digital Main Zone",
+            "D": "Domain Multiple Zone"
+          },
+          "jawaban_benar": "B"
+        },
+        {
+          "nomor": 2,
+          "pertanyaan": "Tujuan utama penerapan zona Demilitarized Zone (DMZ) pada topologi jaringan perusahaan adalah...",
+          "pilihan": {
+            "A": "Menempatkan server publik agar dapat diakses dari internet tanpa mengekspos jaringan lokal internal",
+            "B": "Mempercepat koneksi internet client di dalam ruangan",
+            "C": "Menghilangkan fungsi router pembatas subnet",
+            "D": "Menyatukan seluruh komputer client dan server dalam satu segmen tanpa proteksi"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 3,
+          "pertanyaan": "Layanan manakah yang paling tepat ditempatkan di dalam area zona DMZ?",
+          "pilihan": {
+            "A": "Web Server Publik dan Mail Server",
+            "B": "Server Database Keuangan Perusahaan",
+            "C": "Komputer Administrator Utama",
+            "D": "Server Backup Arsip HRD"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 4,
+          "pertanyaan": "Dalam skenario standar 3-interface firewall, zona jaringan dibagi menjadi...",
+          "pilihan": {
+            "A": "Internal LAN, DMZ, dan External (Internet)",
+            "B": "Wi-Fi, LAN Utama, dan Bluetooth",
+            "C": "Server, Printer, dan Client",
+            "D": "Public, Private, dan Hidden"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 5,
+          "pertanyaan": "Bagaimana aturan akses umumnya diberlakukan dari zona Internet menuju zona DMZ?",
+          "pilihan": {
+            "A": "Diizinkan secara terbatas hanya pada port layanan publik tertentu (misal port 80/443)",
+            "B": "Dilarang total tanpa terkecuali",
+            "C": "Diizinkan penuh tanpa batasan aturan port",
+            "D": "Dialihkan otomatis ke jaringan lokal internal"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 6,
+          "pertanyaan": "Bagaimana aturan akses yang umumnya diterapkan dari zona DMZ menuju zona LAN Internal?",
+          "pilihan": {
+            "A": "Dibatasi secara ketat atau diblokir untuk mencegah penyerang menguasai LAN jika server DMZ bobol",
+            "B": "Diizinkan secara bebas agar sinkronisasi data cepat",
+            "C": "Menggunakan hak akses penuh Administrator",
+            "D": "Tidak memerlukan aturan firewall sama sekali"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 7,
+          "pertanyaan": "Apabila sebuah perusahaan ingin menyediakan layanan website bagi publik luar sekaligus mengamankan database internal, pendekatan arsitektur terbaik adalah...",
+          "pilihan": {
+            "A": "Membuat zona DMZ untuk web server dan menempatkan database di LAN internal di belakang firewall kedua",
+            "B": "Menyatukan web server dan database di satu komputer client",
+            "C": "Menghubungkan langsung database ke internet publik",
+            "D": "Mematikan fitur keamanan firewall agar mudah diakses"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 8,
+          "pertanyaan": "Perangkat jaringan utama yang biasanya bertindak sebagai pengatur lalu lintas antar-zona (LAN, DMZ, WAN) adalah...",
+          "pilihan": {
+            "A": "Firewall / Router berlapis",
+            "B": "Hub non-manageable",
+            "C": "Kabel UTP Straight",
+            "D": "LAN Card biasa"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 9,
+          "pertanyaan": "Salah satu risiko jika web server publik tidak ditempatkan di zona DMZ melainkan langsung di jaringan lokal internal adalah...",
+          "pilihan": {
+            "A": "Jika web server berhasil diretas, penyerang dapat langsung mengakses seluruh komputer di jaringan internal",
+            "B": "Koneksi internet menjadi lebih lambat",
+            "C": "Alamat IP publik berubah setiap hari",
+            "D": "Sistem operasi komputer client otomatis terhapus"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 10,
+          "pertanyaan": "Istilah lain yang sering digunakan untuk menyebut area zona DMZ dalam struktur pengamanan perimeter adalah...",
+          "pilihan": {
+            "A": "Screened Subnet",
+            "B": "Private Cloud",
+            "C": "Local Loopback",
+            "D": "Secure Core"
+          },
+          "jawaban_benar": "A"
+        }
+      ]
+    },
+    {
+      "topik": "TP 3.5 - Pengujian Keamanan Jaringan & Server",
+      "soal": [
+        {
+          "nomor": 1,
+          "pertanyaan": "Proses evaluasi keamanan sistem komputer atau jaringan dengan cara mensimulasikan serangan secara sah disebut...",
+          "pilihan": {
+            "A": "Penetration Testing (Pentest)",
+            "B": "Network Formatting",
+            "C": "IP Subnetting",
+            "D": "Data Compression"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 2,
+          "pertanyaan": "Tool open-source yang sangat populer digunakan oleh administrator untuk memindai port (*port scanning*) dan mendeteksi layanan aktif pada server target adalah...",
+          "pilihan": {
+            "A": "Nmap",
+            "B": "Microsoft Word",
+            "C": "Winbox",
+            "D": "Notepad++"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 3,
+          "pertanyaan": "Dalam tahapan Penetration Testing, fase pertama yang dilakukan tester untuk mengumpulkan informasi awal tentang target disebut...",
+          "pilihan": {
+            "A": "Reconnaissance / Information Gathering",
+            "B": "Exploitation",
+            "C": "Reporting",
+            "D": "Covering Tracks"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 4,
+          "pertanyaan": "Tool analisis protokol jaringan interaktif yang dapat menangkap dan memeriksa paket data secara real-time (*packet sniffer*) adalah...",
+          "pilihan": {
+            "A": "Wireshark",
+            "B": "Adobe Photoshop",
+            "C": "VirtualBox",
+            "D": "XAMPP Control Panel"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 5,
+          "pertanyaan": "Apa tujuan utama dari melakukan audit kerentanan (*vulnerability assessment*) secara berkala pada infrastruktur jaringan?",
+          "pilihan": {
+            "A": "Menemukan celah keamanan sebelum dieksploitasi oleh pihak malang",
+            "B": "Menghabiskan anggaran operasional perusahaan",
+            "C": "Memperlambat kinerja server secara sengaja",
+            "D": "Menghapus seluruh data pengguna secara permanen"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 6,
+          "pertanyaan": "Dokumen resmi yang berisi hasil temuan celah keamanan, tingkat risiko, serta rekomendasi perbaikan bagi pengelola sistem disebut...",
+          "pilihan": {
+            "A": "Pentest Report",
+            "B": "Invoice Pembelian",
+            "C": "Surat Jalan Barang",
+            "D": "Log Aktivitas Harian"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 7,
+          "pertanyaan": "Metode pengujian keamanan di mana penguji (tester) tidak diberikan informasi awal sama sekali mengenai arsitektur sistem target disebut...",
+          "pilihan": {
+            "A": "Black-Box Testing",
+            "B": "White-Box Testing",
+            "C": "Grey-Box Testing",
+            "D": "Clear-Box Testing"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 8,
+          "pertanyaan": "Metode pengujian di mana penguji memiliki akses penuh terhadap informasi arsitektur, kode sumber, dan dokumentasi jaringan target disebut...",
+          "pilihan": {
+            "A": "White-Box Testing",
+            "B": "Black-Box Testing",
+            "C": "Blind Testing",
+            "D": "External Testing"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 9,
+          "pertanyaan": "Kerangka kerja standar internasional untuk pengujian keamanan aplikasi web yang sangat terkenal adalah...",
+          "pilihan": {
+            "A": "OWASP (Open Worldwide Application Security Project)",
+            "B": "IEEE 802.11",
+            "C": "ISO 9001",
+            "D": "Cisco CCNA"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 10,
+          "pertanyaan": "Mengapa pengujian penetrasi harus selalu dilakukan berdasarkan surat izin resmi (*Rules of Engagement*) dari pemilik sistem?",
+          "pilihan": {
+            "A": "Untuk menghindari pelanggaran hukum dan tindakan peretasan ilegal (cybercrime)",
+            "B": "Agar hasil tes menjadi rahasia pribadi tester",
+            "C": "Agar perangkat komputer tidak mengalami rusak fisik",
+            "D": "Supaya proses scanning berjalan lebih lambat"
+          },
+          "jawaban_benar": "A"
+        }
+      ]
+    },
+    {
+      "topik": "TP 3.6 - Fungsi & Cara Kerja Server Autentikasi",
+      "soal": [
+        {
+          "nomor": 1,
+          "pertanyaan": "Kerangka kerja konseptual keamanan jaringan untuk mengontrol akses pengguna yang terdiri dari Authentication, Authorization, dan Accounting disingkat menjadi...",
+          "pilihan": {
+            "A": "AAA Framework",
+            "B": "ABC Protocol",
+            "C": "TCP/IP Suite",
+            "D": "OSI Model"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 2,
+          "pertanyaan": "Proses verifikasi identitas pengguna (seperti pencocokan username dan password) dalam kerangka kerja AAA disebut...",
+          "pilihan": {
+            "A": "Authentication",
+            "B": "Authorization",
+            "C": "Accounting",
+            "D": "Auditing"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 3,
+          "pertanyaan": "Proses menentukan hak akses serta layanan apa saja yang boleh atau tidak boleh digunakan oleh pengguna yang telah terautentikasi disebut...",
+          "pilihan": {
+            "A": "Authorization",
+            "B": "Authentication",
+            "C": "Accounting",
+            "D": "Encryption"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 4,
+          "pertanyaan": "Proses mencatat penggunaan sumber daya jaringan oleh pengguna (seperti lama waktu online, jumlah data yang diunduh) disebut...",
+          "pilihan": {
+            "A": "Accounting",
+            "B": "Autentikasi",
+            "C": "Autorisasi",
+            "D": "Hashing"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 5,
+          "pertanyaan": "Protokol standar industri yang umum digunakan untuk menyediakan layanan AAA terpusat pada jaringan adalah...",
+          "pilihan": {
+            "A": "RADIUS (Remote Authentication Dial-In User Service)",
+            "B": "DHCP Protocol",
+            "C": "ARP Protocol",
+            "D": "ICMP Protocol"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 6,
+          "pertanyaan": "Protokol alternatif buatan Cisco Systems untuk autentikasi jarak jauh yang memisahkan fungsi autentikasi dan autorisasi secara ketat adalah...",
+          "pilihan": {
+            "A": "TACACS+ (Terminal Access Controller Access-Control System Plus)",
+            "B": "NetBIOS",
+            "C": "SNMP",
+            "D": "FTP"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 7,
+          "pertanyaan": "Layanan direktori berbasis standar X.500 yang sering diintegrasikan dengan server autentikasi untuk manajemen pengguna terpusat adalah...",
+          "pilihan": {
+            "A": "LDAP (Lightweight Directory Access Protocol)",
+            "B": "HTTP Server",
+            "C": "SMTP Server",
+            "D": "DNS Server"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 8,
+          "pertanyaan": "Apa keuntungan utama menggunakan server autentikasi terpusat dibandingkan autentikasi lokal di setiap perangkat?",
+          "pilihan": {
+            "A": "Administrator dapat mengelola akun pengguna dan hak akses dari satu tempat dengan mudah",
+            "B": "Membuat kapasitas harddisk server menjadi tidak terbatas",
+            "C": "Menghilangkan kebutuhan akan penggunaan password",
+            "D": "Mempercepat koneksi Wi-Fi secara instan"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 9,
+          "pertanyaan": "Sistem autentikasi tambahan yang meminta dua atau lebih bukti verifikasi identitas (misal password ditambah kode OTP via SMS/App) disebut...",
+          "pilihan": {
+            "A": "Two-Factor Authentication (2FA) / Multi-Factor Authentication (MFA)",
+            "B": "Single-Factor Login",
+            "C": "Open Plaintext Authentication",
+            "D": "Guest Account Access"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 10,
+          "pertanyaan": "Perangkat jaringan yang bertindak sebagai perantara (*NAS - Network Access Server*) saat pengguna mencoba terhubung ke jaringan melalui server RADIUS berfungsi untuk...",
+          "pilihan": {
+            "A": "Meneruskan permintaan kredensial dari pengguna ke server RADIUS untuk diverifikasi",
+            "B": "Menyimpan seluruh database password pengguna",
+            "C": "Menggantikan peran kabel jaringan utama",
+            "D": "Membuat alamat IP publik otomatis"
+          },
+          "jawaban_benar": "A"
+        }
+      ]
+    },
+    {
+      "topik": "TP 3.7 - Sistem Pendeteksi & Penahan Serangan (Snort)",
+      "soal": [
+        {
+          "nomor": 1,
+          "pertanyaan": "Snort adalah perangkat lunak sumber terbuka (*open-source*) yang berfungsi sebagai...",
+          "pilihan": {
+            "A": "NIDS / NIPS (Network Intrusion Detection / Prevention System)",
+            "B": "Web Browser",
+            "C": "Database Management System",
+            "D": "Operating System Server"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 2,
+          "pertanyaan": "Apa perbedaan utama antara mode IDS (Intrusion Detection System) dan IPS (Intrusion Prevention System) pada Snort?",
+          "pilihan": {
+            "A": "IDS hanya mendeteksi dan memberi peringatan (log), sedangkan IPS dapat mendeteksi sekaligus memblokir serangan secara aktif",
+            "B": "IDS jauh lebih berbahaya daripada IPS",
+            "C": "IPS tidak memerlukan aturan konfigurasi",
+            "D": "IDS khusus untuk jaringan nirkabel saja"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 3,
+          "pertanyaan": "Perhatikan potongan rule Snort berikut: `alert tcp any any -> 192.168.1.10 80 (msg:\"Akses HTTP\"; sid:10001;)`\nKata kunci `alert` pada awal baris rule tersebut berfungsi untuk...",
+          "pilihan": {
+            "A": "Menghasilkan peringatan saat paket yang cocok terdeteksi",
+            "B": "Menghapus paket data dari jaringan",
+            "C": "Mengubah alamat IP tujuan",
+            "D": "Menonaktifkan layanan web"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 4,
+          "pertanyaan": "Dalam struktur rule Snort di atas, angka `80` menunjukkan...",
+          "pilihan": {
+            "A": "Port Tujuan (Destination Port)",
+            "B": "Nomor Identitas Rule (SID)",
+            "C": "Ukuran Maksimal Paket",
+            "D": "Jumlah Batas Percobaan Login"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 5,
+          "pertanyaan": "Kepanjangan dari parameter `sid` di dalam aturan (*rule*) konfigurasi Snort adalah...",
+          "pilihan": {
+            "A": "Snort Identifier / Signature ID",
+            "B": "System Internal Domain",
+            "C": "Secure Internet Data",
+            "D": "Server Interface Device"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 6,
+          "pertanyaan": "Tindakan apa yang dilakukan oleh opsi rule Snort jika menggunakan aksi `drop` dalam mode IPS?",
+          "pilihan": {
+            "A": "Menolak dan membuang paket data yang mencurigakan secara langsung",
+            "B": "Mengizinkan paket lewat dan mencatatnya di log",
+            "C": "Mengirimkan email otomatis ke admin",
+            "D": "Meminta konfirmasi ulang kepada pengguna"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 7,
+          "pertanyaan": "Komponen Snort yang bertugas membaca paket data yang lewat pada interface jaringan dan mencocokkannya dengan aturan yang dibuat adalah...",
+          "pilihan": {
+            "A": "Detection Engine",
+            "B": "Database Storage",
+            "C": "Web GUI Client",
+            "D": "Hardware Switch"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 8,
+          "pertanyaan": "Mengapa analisis basis tanda tangan (*signature-based detection*) sangat penting dalam pengoperasian Snort?",
+          "pilihan": {
+            "A": "Untuk mengenali pola serangan yang sudah diketahui karakteristiknya secara akurat berdasarkan database rule",
+            "B": "Untuk mempercepat proses booting sistem operasi Linux",
+            "C": "Untuk menggantikan fungsi kabel UTP",
+            "D": "Untuk mengompres ukuran file log"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 9,
+          "pertanyaan": "File utama tempat administrator menyunting atau menambahkan aturan (*rule*) deteksi kustom pada Snort biasanya berekstensi...",
+          "pilihan": {
+            "A": ".rules",
+            "B": ".exe",
+            "C": ".png",
+            "D": ".mp3"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 10,
+          "pertanyaan": "Apa yang dimaksud dengan kondisi *False Positive* pada sistem pendeteksi intrusi seperti Snort?",
+          "pilihan": {
+            "A": "Sistem mendeteksi aktivitas normal/sah sebagai sebuah serangan berbahaya",
+            "B": "Sistem gagal mendeteksi serangan nyata",
+            "C": "Sistem mengalami kerusakan hardware total",
+            "D": "Koneksi internet terputus otomatis"
+          },
+          "jawaban_benar": "A"
+        }
+      ]
+    },
+    {
+      "topik": "TP 3.8 - Pengamanan Komunikasi Data (Kriptografi)",
+      "soal": [
+        {
+          "nomor": 1,
+          "pertanyaan": "Ilmu dan teknik yang mempelajari cara mengamankan data dengan mengubahnya menjadi bentuk yang tidak dapat dibaca kecuali oleh pihak yang berwenang disebut...",
+          "pilihan": {
+            "A": "Kriptografi",
+            "B": "Topologi Jaringan",
+            "C": "Subnetting",
+            "D": "Routing Statis"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 2,
+          "pertanyaan": "Proses mengubah teks asli (*plaintext*) menjadi teks tersandi yang tidak terbaca (*ciphertext*) disebut...",
+          "pilihan": {
+            "A": "Enkripsi",
+            "B": "Dekripsi",
+            "C": "Hashing",
+            "D": "Compression"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 3,
+          "pertanyaan": "Proses mengembalikan teks tersandi (*ciphertext*) kembali menjadi teks asli (*plaintext*) agar dapat dibaca disebut...",
+          "pilihan": {
+            "A": "Dekripsi",
+            "B": "Enkripsi",
+            "C": "Steganografi",
+            "D": "Spamming"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 4,
+          "pertanyaan": "Jenis kriptografi yang menggunakan satu kunci yang sama untuk proses enkripsi maupun dekripsi data disebut...",
+          "pilihan": {
+            "A": "Kriptografi Simetris (Symmetric Cryptography)",
+            "B": "Kriptografi Asimetris (Asymmetric Cryptography)",
+            "C": "Fungsi Hash Satu Arah",
+            "D": "Digital Signature"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 5,
+          "pertanyaan": "Jenis kriptografi yang menggunakan sepasang kunci berbeda—yaitu Public Key untuk enkripsi dan Private Key untuk dekripsi—disebut...",
+          "pilihan": {
+            "A": "Kriptografi Asimetris (Public-Key Cryptography)",
+            "B": "Kriptografi Simetris",
+            "C": "Caesar Cipher",
+            "D": "ROT13 Cipher"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 6,
+          "pertanyaan": "Algoritma fungsi hash satu arah yang menghasilkan nilai sidik jari digital (checksum) tetap untuk menguji integritas data adalah...",
+          "pilihan": {
+            "A": "SHA-256 / MD5",
+            "B": "AES-256",
+            "C": "RSA-2048",
+            "D": "Diffie-Hellman"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 7,
+          "pertanyaan": "Contoh algoritma enkripsi simetris modern yang saat ini menjadi standar industri global untuk pengamanan data adalah...",
+          "pilihan": {
+            "A": "AES (Advanced Encryption Standard)",
+            "B": "Morse Code",
+            "C": "HTML Protocol",
+            "D": "IPv4 Header"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 8,
+          "pertanyaan": "Protokol keamanan komunikasi web yang menggabungkan enkripsi kriptografi untuk mengamankan pertukaran data antara browser dan server adalah...",
+          "pilihan": {
+            "A": "SSL / TLS (Secure Sockets Layer / Transport Layer Security)",
+            "B": "DHCP Server",
+            "C": "FTP Client",
+            "D": "ARP Table"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 9,
+          "pertanyaan": "Apa fungsi utama dari Tanda Tangan Digital (*Digital Signature*) dalam pengiriman dokumen elektronik?",
+          "pilihan": {
+            "A": "Memastikan keaslian identitas pengirim dan menjamin keutuhan dokumen dari manipulasi di tengah jalan",
+            "B": "Mempercepat ukuran file dokumen menjadi lebih ringan",
+            "C": "Mengubah warna latar belakang dokumen teks",
+            "D": "Menghapus riwayat pengiriman pesan"
+          },
+          "jawaban_benar": "A"
+        },
+        {
+          "nomor": 10,
+          "pertanyaan": "Metode klasik kriptografi substitusi sederhana yang menggeser abjad sejauh beberapa karakter tertentu disebut...",
+          "pilihan": {
+            "A": "Caesar Cipher",
+            "B": "RSA Algorithm",
+            "C": "AES Block Cipher",
+            "D": "SHA Hashing"
+          },
+          "jawaban_benar": "A"
+        }
+      ]
+    }
+  ]
+}
